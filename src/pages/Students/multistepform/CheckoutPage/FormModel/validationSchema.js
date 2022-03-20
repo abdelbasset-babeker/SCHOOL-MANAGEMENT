@@ -13,13 +13,9 @@ const {
     fatherphone,
     address,
     email,
-    course,
-    paymentmethod,
-
+    courseData
   }
-} = checkoutFormModel;
-
-const visaRegEx = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/;
+} = checkoutFormModel
 
 export default [
   Yup.object().shape({
@@ -39,7 +35,6 @@ export default [
     [fatherphone.name]: Yup.string().required(`${fatherphone.requiredErrorMsg}`),
     [address.name]: Yup.string().required(`${address.requiredErrorMsg}`),
     [email.name]: Yup.string().required(`${email.requiredErrorMsg}`),
-  }),
- 
+  })
  
 ];

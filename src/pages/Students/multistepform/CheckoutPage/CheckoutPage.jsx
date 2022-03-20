@@ -54,6 +54,7 @@ export default function CheckoutPage() {
 
   async function _submitForm(values, actions) {
     await _sleep(1000);
+    
     alert(JSON.stringify(values, null, 9));
     actions.setSubmitting(false);
 
@@ -76,9 +77,13 @@ export default function CheckoutPage() {
 
   return (
     <React.Fragment >
-      <Typography component="h1" variant="h4" align="center">
-        Checkout
+      <Typography component="h1" variant="h5" align="center">
+        Please Make Sure To Full Everything Right 
       </Typography>
+      <Typography  component="P" variant="P" align="center">
+        Please Make Sure To Full Everything Right 
+      </Typography>
+
       <Stepper activeStep={activeStep} className={classes.stepper} alternativeLabel>
         {steps.map(label => (
           <Step key={label}>
@@ -95,7 +100,8 @@ export default function CheckoutPage() {
             validationSchema={currentValidationSchema}
             onSubmit={_handleSubmit}
           >
-            {({ isSubmitting }) => (
+            {({ isSubmitting }) => ( 
+
               <Form id={formId}>
                 {_renderStepContent(activeStep)}
 
@@ -106,7 +112,8 @@ export default function CheckoutPage() {
                     </Button>
                   )}
                   <div className={classes.wrapper} >
-                      {isLastStep ? <Button
+                      {isLastStep ? 
+                      <Button
                       disabled={isSubmitting}
                       type="submit"
                       variant="contained"

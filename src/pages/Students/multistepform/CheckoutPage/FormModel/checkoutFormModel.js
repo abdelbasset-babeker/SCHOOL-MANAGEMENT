@@ -3,64 +3,58 @@ export default {
   formField: {
     firstName: {
       name: 'firstName',
-      label: 'First name*',
+      label: 'First name *',
       requiredErrorMsg: 'First name is required'
     },
     lastName: {
       name: 'lastName',
-      label: 'Last name*',
+      label: 'Last name *',
       requiredErrorMsg: 'Last name is required'
     },
     birthday: {
       name: 'birthday',
-      label: 'BirthDay*',
+      label: 'BirthDay *',
       requiredErrorMsg: 'Address Line 1 is required'
     },
     gender: {
       name: 'gender',
-      label: 'gender*',
-      requiredErrorMsg: 'gender is required'
+      label: 'Gender *',
+      requiredErrorMsg: 'Gender is required'
     },
     studylevel: {
       name: 'studylevel',
-      label: 'Study Level*',
+      label: 'Study Level *',
       requiredErrorMsg: 'Study level is required'
     },
     fathername: {
       name: 'fathername',
-      label: 'Father Name*',
+      label: 'Father Name *',
       requiredErrorMsg: 'Father Name is required'
     },
     phonenumber: {
       name: 'phonenumber',
-      label: 'Phone Number*',
+      label: 'Phone Number *',
       requiredErrorMsg: 'Phone Number is required'
     },
     fatherphone: {
       name: 'fatherphone',
-      label: 'Fathers Phone*',
+      label: 'Fathers Phone *',
       requiredErrorMsg: 'Father Phone is required'
     },
     address: {
       name: 'address',
-      label: 'Address*',
+      label: 'Address *',
       requiredErrorMsg: 'Address is required'
     },
     email: {
       name: 'email',
-      label: 'Email*',
+      label: 'Email *',
       requiredErrorMsg: 'Email is required'
     },
-    course: {
-      name: 'course',
-      label: 'Course*',
-      requiredErrorMsg: 'Ccourse is required'
-    },
-    paymentmethod: {
-      name: 'paymentmethod',
-      label: 'Payment Method*',
-      requiredErrorMsg: 'Payment Method is required'
-    },
-    
+    courseData: {
+      name: 'courseData',
+      label: 'courseData',
+      requiredErrorMsg: 'courseData is required'
+    },    
   }
 };

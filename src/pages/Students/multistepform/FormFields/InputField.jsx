@@ -1,22 +1,15 @@
 import React from 'react';
 import { at } from 'lodash';
 import { useField } from 'formik';
-import { makeStyles, TextField } from '@material-ui/core';
+import { TextField } from '@material-ui/core';
 
 
-
-const useStyles = makeStyles((theme) => ({
-
-  
-}));
 
 
 
 export default function InputField(props) {
   const { errorText, ...rest } = props;
   const [field, meta] = useField(props);
-  const classes = useStyles();
-
 
   function _renderHelperText() {
     const [touched, error] = at(meta, 'touched', 'error');

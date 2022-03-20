@@ -68,28 +68,32 @@ export default function PersonalInformation(props) {
       gender,
       studylevel,
       fathername,
-      phonenumber,
-      fatherphone,
-      address,
-      email,
     }
   } = props;
   return (
     <React.Fragment>
-      <Typography variant="h6" gutterBottom>
-        Shipping address
-      </Typography>
       <Grid container spacing={3}>
-        <Grid item xs={12} sm={6} md={4}>
+
+        <Grid item xs={12} sm={12} >
+        </Grid>
+
+        <Grid item xs={12} sm={12} md={6} >
           <InputField name={firstName.name} label={firstName.label} fullWidth />
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+
+        <Grid item xs={12} sm={12} md={6}>
           <InputField name={lastName.name} label={lastName.label} fullWidth />
         </Grid>
-        <Grid item xs={12} md={4}>
+
+        <Grid item xs={12} sm={12} md={6}>
           <InputField name={birthday.name} label={birthday.label} fullWidth />
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+
+        <Grid item xs={12} sm={12} md={6}>
+          <InputField name={fathername.name} label={fathername.label} fullWidth />
+        </Grid>
+
+        <Grid item xs={12} sm={6} md={6}>
           <SelectField
             name={studylevel.name}
             label={studylevel.label}
@@ -97,7 +101,8 @@ export default function PersonalInformation(props) {
             fullWidth
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+
+        <Grid item xs={12} sm={6} md={6}>
           <SelectField
             name={gender.name}
             label={gender.label}
@@ -105,9 +110,9 @@ export default function PersonalInformation(props) {
             fullWidth
           />
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
-          <InputField name={fathername.name} label={fathername.label} fullWidth />
-        </Grid>
+
+
+
       </Grid>
     </React.Fragment>
   );

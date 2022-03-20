@@ -1,4 +1,8 @@
+import { useState } from 'react';
 import checkoutFormModel from './checkoutFormModel';
+
+
+
 const {
   formField: {
     firstName,
@@ -11,7 +15,8 @@ const {
     fatherphone,
     address,
     email,
-  }
+    courseData
+  },
 } = checkoutFormModel;
 
 export default {
@@ -25,4 +30,12 @@ export default {
   [fatherphone.name]: '',
   [address.name]: '',
   [email.name]: '',
+  [courseData.name]: [''],
+
+  // [courseData.name]:[
+  //   {
+  //     course : '',
+  //     pymentmethode : '' ,
+  //   }
+  // ],
 };
